@@ -1,0 +1,10 @@
+[package]
+name = "conjured_cli"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# `bundled` causes us to automatically compile and link in an up to date
+# version of SQLite for you
+rusqlite = { version = "0.37.0", features = ["bundled"] }
+
